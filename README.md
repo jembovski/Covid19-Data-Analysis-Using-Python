@@ -445,6 +445,8 @@ fig.update_layout(title_text = 'Global Deaths of COVID=19')
 fig.show()
 ```
 
+![png](12.png)
+
 ### Task 3.1:
 #### Let's Visualize how intensive the Covid19 Transmission has been in each of the country
 let's start with an example:
@@ -679,6 +681,7 @@ df_china.head()
 px.line(df_china, x = 'Date', y = ['Confirmed','Infection Rate'])
 ```
 
+![png](13.png)
 
 ```python
 df_china['Infection Rate'].max()
@@ -889,6 +892,8 @@ df_MIR
 ```python
 px.bar(df_MIR, x="Country", y='Max Infection Rates', color = 'Country', title = 'Global Max Infection Rate', log_y=True)
 ```
+
+![png](14.png)
 
 ### Task 4: Let's See how National Lockdowns Impacts Covid19 transmission in Italy
 
@@ -1215,6 +1220,7 @@ fig.add_annotation(
 
 )
 ```
+![png](15.png)
 
 ### Task 5: Let's See how National Lockdowns Impacts Covid19 active cases in Italy
 
@@ -1420,7 +1426,7 @@ now let's plot a line chart to compare COVID19 national lockdowns impacts on spr
 fig = px.line(df_italy, x='Date', y=['Infection Rate', 'Deaths Rate'])
 fig.show()
 ```
-
+![png](16.png)
 
 ```python
 df_italy['Infection Rate'] = df_italy['Infection Rate']/df_italy['Infection Rate'].max()
@@ -1491,7 +1497,7 @@ fig.add_annotation(
 
 fig.show()
 ```
-
+![png](17.png)
 
 ```python
 
