@@ -432,6 +432,8 @@ fig.update_layout(title_text = 'Global Spread of COVID=19')
 fig.show()
 ```
 
+![png](11.png)
+
 ### Task 2.2 : Exercise 
 #### Let's see Global deaths of Covid19
 
